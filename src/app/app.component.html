@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <ul class="navbar-nav">
+        <li>
+            <a class="navbar-brand" routerLink="personas" routerLinkActive="active">
+                <img src="favicon.ico" width="30" height="30" alt="Error" style="margin-left: 15px;">
+            </a>
+        </li>
+        <li class="nav-item">
+            <a routerLink="personas" routerLinkActive="active" class="nav-link">Listado de Personas</a>
+        </li>
+        <li class="nav-item">
+            <a routerLink="barcos" routerLinkActive="active" class="nav-link">Listado de Barcos</a>
+        </li>
+    </ul>
+</nav>
+<h1 class="text-center">{{ title }}</h1>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>

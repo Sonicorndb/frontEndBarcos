@@ -1,0 +1,26 @@
+<div class="col-md-6 offset-md-3 margin-4">
+    <h3 class="text-center">Registro de Barcos</h3>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group" style="margin: 10px;">
+            <label>Nombre : </label>
+            <input type="text" class="form-control" id="nombre" [(ngModel)]="barco.nombre" name="nombre" requird placeholder="Escriba el nombre del barco...">
+        </div>
+        <div class="form-group" style="margin: 10px;">
+            <label>Matricula : </label>
+            <input type="text" class="form-control" id="numeroMatricula" [(ngModel)]="barco.numeroMatricula" name="numeroMatricula" requird placeholder="Escriba la matricula del barco...">
+        </div>
+        <div class="form-group" style="margin: 10px;">
+            <label>Cuota : </label>
+            <input type="number" class="form-control" id="cuota" [(ngModel)]="barco.cuota" name="cuota" requird placeholder="Indique la cuota...">
+        </div>
+        <div class="form-group" style="margin: 10px;">
+            <label>Numero de Amarre : </label>
+            <input type="number" class="form-control" id="numeroAmarre" [(ngModel)]="barco.numeroAmarre" name="numeroAmarre" requird placeholder="Indique el numero de Amarre...">
+        </div>      
+        <div class="form-group" style="margin: 10px;">
+            <label>ID de Personas : </label>
+            <input type="number" class="form-control" id="idPersona" [(ngModel)]="barco.idPersona" name="idPersona" requird placeholder="Indique el id de la Persona...">
+        </div>     
+        <button class="btn btn-success" style="margin: 10px;">Registrar</button>
+    </form>
+</div>

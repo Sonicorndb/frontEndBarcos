@@ -1,0 +1,23 @@
+<a href="/registrar-barcos"><button type="button" style="margin-bottom: 10px;" class="btn btn-success">Registrar Barcos</button></a>
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Matricula</th>
+            <th>Cuota</th>
+            <th>Numero Amarre</th>
+            <th>ID Persona</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let barco of barcos">
+            <td>{{barco.id}}</td>
+            <td>{{barco.nombre}}</td>
+            <td>{{barco.numeroMatricula}}</td>
+            <td>{{barco.cuota}}</td>
+            <td>{{barco.numeroAmarre}}</td>
+            <td>{{barco.idPersona}}</td>
+        </tr>
+    </tbody>
+</table>

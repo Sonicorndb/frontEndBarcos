@@ -1,0 +1,24 @@
+<a href="/registrar-persona"><button type="button" class="btn btn-success" style="margin-bottom: 10px;">Registrar Persona</button></a>
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Es socio</th>
+            <th>Nacionalidad</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let persona of personas">
+            <td>{{persona.id}}</td>
+            <td>{{persona.nombre}}</td>
+            <td>{{persona.esSocio}}</td>
+            <td>{{persona.nacionalidad}}</td>
+            <td>
+                <button (click)="actualizarPersona(persona.id)" class="btn btn-info">Editar</button>
+                <button (click)="eliminarPersona(persona)" class="btn btn-danger" style="margin-left: 10px;">Eliminar</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
